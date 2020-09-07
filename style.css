@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(vc.gif);
+  align-items: center;
+  background-color: black;
+}
+
+#heading {
+  color: burlywood;
+  text-align: center;
+}
+
+#allbutton {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+}
+
+#booklist {
+  height: 70vh;
+  width: 80vw;
+  border: 1vh solid burlywood;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+
+.bookitem {
+  color: white;
+  background-color: rgba(30, 32, 34, 0.596);
+  height: 100px;
+  margin: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  position: relative;
+}
+
+#formadd {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input {
+  width: 90%;
+}
+
+#ok {
+  width: 50%;
+}
+
+#error {
+  color: red;
+}
+
+#mark {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: rgba(38, 26, 61, 0.603);
+  text-align: center;
+}

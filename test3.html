@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <h1 id="heading">My Book!!</h1>
+    <div id="allbutton">
+      <button id="all">Tất cả</button>
+      <button id="unread">Chưa đọc</button>
+      <button id="read">Đã đọc</button>
+      <button id="add">Thêm sách sẽ đọc</button>
+    </div>
+    <img src="" alt="" />
+    <div id="booklist"><read-list></read-list><unread-list></unread-list></div>
+    <div id="formadd" style="visibility: hidden">
+      <label for="">Tên sách</label>
+      <input type="text" name="" id="namebook" />
+      <label for="">Tên tác giả</label>
+      <input type="text" name="" id="aubook" />
+      <label for="">Ảnh</label>
+      <input type="text" name="" id="imgbook" />
+      <div id="error"></div>
+      <button id="ok">OK</button>
+    </div>
+  </body>
+
+
+  <template id="readlist">
+    <link rel="stylesheet" href="style.css" />
+    <div class="container" id="rlist"></div>
+  </template>
+  <template id="unreadlist">
+    <link rel="stylesheet" href="style.css" />
+    <div class="container" id="urlist"></div>
+  </template>
+  <template id="bookitem">
+    <link rel="stylesheet" href="style.css" />
+    <div class="bookitem" id="item">
+      <div id="img"></div>
+      <div id="name"></div>
+      <div id="author"></div>
+      <div id="mark">Chuyển chưa đọc -- đã đọc</div>
+    </div>
+  </template>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDVtT5y9UoPKohWb1cAOZNma_o7gdfhLWo",
+      authDomain: "test3-88ae2.firebaseapp.com",
+      databaseURL: "https://test3-88ae2.firebaseio.com",
+      projectId: "test3-88ae2",
+      storageBucket: "test3-88ae2.appspot.com",
+      messagingSenderId: "930390184564",
+      appId: "1:930390184564:web:39efcb5f85a72ad6ed7721",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script type="module" src="test3.js"></script>
+</html>
